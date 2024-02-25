@@ -22,7 +22,6 @@ function Home() {
 
 const click=()=>{
   audioRef.current.play();
-  setLoa(false);
 }
   return (
     <>
