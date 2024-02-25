@@ -10,7 +10,6 @@ import hand from "../../assets/img/Here.gif"
 function Home() {
   const audioRef=useRef();
   const socket=useContext(socketContext);
-  const [loa,setLoa]=useState(true);
   socket.emit("createRoom",0);
   socket.on("reject",()=>{
     alert("bạn không thể truy cập room hiện tại đã đủ người chơi");
@@ -35,13 +34,10 @@ const click=()=>{
           </div>
           <Chat></Chat>
         </div>
-        {
-          loa&& 
-          <>
+  
            <img src={hand} className={style.Hand}></img>
           <img src={loa1} className={style.Loa}  onClick={click}></img>
-          </>
-}
+      
       </div>
     </>
   );
