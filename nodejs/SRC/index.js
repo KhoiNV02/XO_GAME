@@ -21,13 +21,13 @@ const server = http.createServer(app);
 // const io = socketIo(server);
 const io = socketIo(server, {
   cors: {
-    origin: "https://xo-game-eta.vercel.app/",
+    origin: "https://xo-game-eta.vercel.app",
     methods: ["GET", "POST"],
     allowedHeaders: ["Content-Type", "Authorization"]
   }
 });
 app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', 'https://xo-game-eta.vercel.app/');
+  res.setHeader('Access-Control-Allow-Origin', 'https://xo-game-eta.vercel.app');
   // Cho phép các phương thức HTTP được sử dụng (GET, POST, PUT, DELETE...)
   res.setHeader('Access-Control-Allow-Methods', 'GET, POST, PUT, DELETE');
   // Cho phép các header được gửi trong yêu cầu (Content-Type, Authorization...)
