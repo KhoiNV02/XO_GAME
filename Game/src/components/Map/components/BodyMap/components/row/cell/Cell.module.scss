@@ -1,0 +1,13 @@
+.cell {
+    width: 33.22%;
+    height: 100%;
+    border: 0.4rem solid #000;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-image: url('../../../../../../../assets//img/back.png') 30 round;
+    cursor: pointer;
+    img {
+      margin: 2.5%;
+      width: 90%;
+      height: auto;
+    }
+  }

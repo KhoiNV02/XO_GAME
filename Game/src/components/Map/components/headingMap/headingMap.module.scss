@@ -1,0 +1,59 @@
+.headingMap {
+  height: 20%;
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  align-items: center;
+  .User1 {
+    margin-left: -4rem;
+
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    .Image {
+      width: 49%;
+      height: 100%;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+    .Name {
+      padding-left: 2rem;
+      width: 49%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      p {
+        color: white;
+        font-size: 2.5rem;
+      }
+    }
+  }
+
+  .User2 {
+    margin-right: -4rem;
+    .Image {
+      width: 49%;
+      height: 100%;
+      img {
+        width: 80%;
+        height: auto;
+      }
+    }
+  }
+  .Score {
+    margin-left: -2rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 30%;
+    text-align: center;
+    p {
+      font-size: 3rem;
+      color: white;
+    }
+  }
+}

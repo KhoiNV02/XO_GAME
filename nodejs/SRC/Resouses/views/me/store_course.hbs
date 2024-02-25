@@ -1,0 +1,72 @@
+<div class="mt-4">
+    <h3>khóa học của tôi</h3>
+    <table class="table">
+  <thead>
+    <tr>
+        <th scope="col">#</th>
+        <th scope="col">Tên khóa học</th>
+        <th scope="col">Mô tả</th>
+        <th scope="col">thời gian tạo</th>
+        <th scope="col">Công việc sửa</th>
+         <th scope="col">Công việc xóa</th>
+
+    </tr>
+  </thead>
+  <tbody>
+    {{#each courses}}
+    <tr>
+      <th scope="row">{{sum @index 1}}</th>
+      <td>{{this.name}}</td>
+      <td>{{this.descript}}</td>
+      <td>{{this.createdAt}}</td>
+      <td>  <a href="/detail/{{this._id}}/edit" class="btn btn-link">Sửa</a>
+       </td>
+       <td> <a href="" class="btn btn-link" data-toggle="modal" data-target="#delete_Course" data-id="{{this._id}}" >xóa</a></td>
+    </tr>
+   
+    {{/each}}
+  </tbody>
+</table>
+</div>
+
+{{!-- form xác nhận việc xóa --}}
+<div id ="delete_Course" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Xác nhận xóa khóa học</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Bạn chắc chắn muốn xóa khóa học này.</p>
+      </div>
+      <div class="modal-footer">
+        <button id="btn-delete" type="button" class="btn btn-danger" >xóa</button>
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{!-- form hiden delete --}}
+<form id="delete-form" method="POST"></form>
+<script>
+document.addEventListener('DOMContentLoaded',function(){
+var deleteForm=document.forms['delete-form'];
+var courseID;
+ $('#delete_Course').on('show.bs.modal', function (event) {
+  var button = $(event.relatedTarget) // Button that triggered the modal
+   courseID = button.data('id') // Extract info from data-* attributes
+});
+
+var btn=document.querySelector('#btn-delete');
+btn.onclick=function(){
+  deleteForm.action='/detail/'+courseID+'?_method=DELETE';
+  deleteForm.submit();
+}
+});
+
+ 
+</script>

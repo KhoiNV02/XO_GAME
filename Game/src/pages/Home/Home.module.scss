@@ -1,0 +1,44 @@
+.backGround {
+  background-image: url('../../assets/img/back2.png');
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .containerMap {
+    width: 60%;
+    height: 90%;
+    background-image: url('../../assets/img/back2.png');
+    border: 0.3rem solid #000;
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .Map {
+      margin-left: 2.2rem;
+      width: 50%;
+      border-radius: 2rem;
+      display: flex;
+      justify-content: space-around;
+      flex-direction: column;
+    }
+  }
+  .Loa,.Hand
+  {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 15%;
+    height: auto;
+    cursor: pointer;
+  }
+  .Hand
+  {
+    z-index: 1;
+    right: 5%;
+    cursor: none;
+    bottom: 23%;
+    transform:scaleX(-1) rotate(270deg);
+
+  }
+}
