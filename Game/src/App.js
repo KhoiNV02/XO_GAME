@@ -12,7 +12,7 @@ import io from 'socket.io-client';
 export const socketContext = createContext();
 function App() {
   const [show, setShow] = useState(false);
-  const socket = io('http://localhost:8080');
+  const socket = io('https://tic-tac-toe-gs8t.onrender.com');
   return (
 
     <>
