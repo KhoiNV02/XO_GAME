@@ -42,3 +42,33 @@
 
   }
 }
+
+
+
+/* Mobile */
+@media (max-width: 680px) or (max-width: 1034px) {
+  .backGround
+  {.containerMap {
+    width:90%;
+  }
+  .Loa,.Hand
+  {
+    width: 8%;
+  }
+  .Hand
+  {
+    right:0;
+    bottom: 10%;
+    transform:scaleX(1) rotate(270deg);
+
+  }
+}
+}
+
+@media (max-width: 1034px) {
+  .backGround
+  {.containerMap {
+    width:90%;
+  }
+}
+}

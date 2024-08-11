@@ -7,6 +7,7 @@
   display: flex;
   justify-content: left;
   align-items: center;
+
   textArea {
     height: 5rem;
     width: 88%;
@@ -29,3 +30,16 @@
     cursor: pointer;
   }
 }
+
+@media (max-width: 767px) {
+  .Text 
+  { 
+    height: 15%;
+    textArea 
+    {
+      height: 3rem;
+    padding-top: 1.5%;
+  }
+}
+}
+

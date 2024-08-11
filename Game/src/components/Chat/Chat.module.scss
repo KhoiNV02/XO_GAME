@@ -1,10 +1,11 @@
 .container {
-  margin-top: 5rem;
+  margin-top: 3%;
   margin-right: 1rem;
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url('../../assets/img/back3.png');
   background-size: contain;
   width: 42%;
-  height: 55rem;
+  height: 95%;
+  margin-bottom:3%; 
   border-radius: 2rem;
 }
 .child {
@@ -35,5 +36,38 @@
     margin-top: 0.3rem;
     width: 100%;
     height: 85%;
+  }
+}
+
+// /* Màn hình máy tính để bàn lớn */
+// @media (min-width: 1200px) {
+//   /* Các quy tắc CSS cho màn hình lớn */
+// }
+
+// /* Màn hình máy tính để bàn trung bình */
+// @media (min-width: 992px) and (max-width: 1199px) {
+//   /* Các quy tắc CSS cho màn hình trung bình */
+// }
+
+// /* Màn hình máy tính để bàn nhỏ */
+// @media (min-width: 768px) and (max-width: 991px) {
+//   /* Các quy tắc CSS cho màn hình nhỏ */
+// }
+
+// /* Màn hình máy tính bảng dọc */
+// @media (min-width: 768px) and (max-width: 991px) {
+//   /* Các quy tắc CSS cho máy tính bảng dọc */
+// }
+
+// /* Màn hình máy tính bảng ngang */
+// @media (min-width: 992px) and (max-width: 1199px) {
+//   /* Các quy tắc CSS cho máy tính bảng ngang */
+// }
+
+// /* Màn hình điện thoại dọc */
+@media (max-width: 767px) {
+  .container {
+    margin-top: 3%;   
+    height: 29rem;
   }
 }
