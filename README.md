@@ -2,7 +2,7 @@
 
 ## Mô tả
 [Tic Tac Toe Game] Game cơ Caro cơ bản (3x3) kết nối 2 người chơi online.
-## Demo: https://xo-game-eta.vercel.app/
+## Demo: [https://xo-game-eta.vercel.app/](https://xo-game-git-main-khoinv02s-projects.vercel.app/)
 
 ## Tính Năng
 - yêu cầu:
