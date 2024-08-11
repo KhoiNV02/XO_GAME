@@ -44,7 +44,7 @@ function Cell(props) {
   return (
     <>
       <div className={style.cell} onClick={handleClickCell} ref={cellRef}>
-        {check && <img src={stateCell ? X : O}></img>}
+        {check && <img  src={stateCell ? X : O}></img>}
       </div>
     </>
   );
